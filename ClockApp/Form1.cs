@@ -27,5 +27,10 @@ namespace ClockApp
             DateTime now = DateTime.Now;
             label1.Text = now.ToString("HH:mm:ss");
         }
+
+        private void Clock_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
