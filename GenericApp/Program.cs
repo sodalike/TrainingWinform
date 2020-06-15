@@ -53,7 +53,7 @@ namespace GenericApp
             gDouble.Print();
 
 
-            //주석
+            //주석이다
 
 
         }
