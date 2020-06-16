@@ -37,11 +37,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(125, 142);
+            this.label1.Location = new System.Drawing.Point(69, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(543, 139);
             this.label1.TabIndex = 0;
             this.label1.Text = "12:50:00";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // timer1
             // 
@@ -52,7 +53,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(672, 381);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
@@ -60,7 +61,7 @@
             this.Name = "Clock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clock";
-            this.Load += new System.EventHandler(this.Clock_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Clock_FormClosing_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
