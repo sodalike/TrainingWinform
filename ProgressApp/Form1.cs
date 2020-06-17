@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoginApp
+namespace ProgressApp
 {
     public partial class Form1 : Form
     {
@@ -19,12 +19,10 @@ namespace LoginApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox3.Text = "ID : " + textBox1.Text + "\r\n" + "Password : " + textBox2.Text;
-            
-            if((textBox1.Text.ToUpper() == "ADMIN") && (textBox2.Text.ToUpper() == "P@SSW0RD!")) 
-                // 소문자를 받는 소,대문자를 혼용하든 모든 것을 대문자로 
+            for (int i = 0; i < progressBar1.Maximum; i++)
             {
-                MessageBox.Show("관리자 로그인");
+                progressBar1.Value = i;
+
             }
         }
     }
