@@ -15,7 +15,6 @@ namespace BookRentalShop20
 {
     public partial class DivForm : MetroForm
     {
-        string strConnString = "Data Source=192.168.0.81;Initial Catalog=bookrentalshopDB;Persist Security Info=True;User ID=sa;Password=p@ssw0rd!";
         string mode = "";
 
         public DivForm()
@@ -32,7 +31,7 @@ namespace BookRentalShop20
        
         private void UpdateData()
         {
-            using(SqlConnection conn = new SqlConnection(strConnString))
+            using(SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
             {
                 conn.Open(); //DB열기
                 string strQuery = "SELECT Division, Names FROM divtbl";
@@ -87,7 +86,7 @@ namespace BookRentalShop20
 
         private void DeleteProcss()
         {
-            using(SqlConnection conn = new SqlConnection(strConnString)) 
+            using(SqlConnection conn = new SqlConnection(Commons.CONNSTRING)) 
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
@@ -112,7 +111,7 @@ namespace BookRentalShop20
         private void SaveProcess() // 실시간 업로딩
         {
             //db저장 프로제스
-            using (SqlConnection conn = new SqlConnection(strConnString))
+            using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
