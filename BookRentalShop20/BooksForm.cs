@@ -87,8 +87,8 @@ namespace BookRentalShop20
         
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(TxtNames.Text)||string.IsNullOrEmpty(TxtAuthor.Text))
-                //if (string.IsNullOrEmpty(TxtMobile.Text) || string.IsNullOrEmpty(TxtISBN.Text))
+            if (string.IsNullOrEmpty(TxtNames.Text)||string.IsNullOrEmpty(TxtAuthor.Text)
+                 || string.IsNullOrEmpty(TxtISBN.Text))
 
                 {
                     MetroMessageBox.Show(this, "빈값은 저장할 수 없습니다.", "경고",
