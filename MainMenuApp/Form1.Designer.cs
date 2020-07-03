@@ -181,7 +181,6 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Clear";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // contextMenuStrip1
             // 
@@ -310,7 +309,7 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 18);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 16);
             // 
             // Form1
             // 

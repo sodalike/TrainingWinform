@@ -17,11 +17,6 @@ namespace MainMenuApp
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void 파일FToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
